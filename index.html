@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Passinho do Romano</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1>Codificador / Decodificador</h1>
+        </div>
+    </header>
+    <p>O seguinte formulário tem como objetivo codificar ou decodificar uma frase, com base na cifra de césar ou da base64.</p>
+    <p>A cifra de César consiste em é uma simples técnica de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes.</p>
+    <img src="cifra.png">
+    <p>A Base64 é um método para codificação de dados para transferência na Internet. É constituído por 64 caracteres ([A-Z],[a-z],[0-9], "/" e "+") que deram origem ao seu nome. O carácter "=" é utilizado como um sufixo especial e a especificação original definiu que o símbolo "*" pode ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream.</p>
+    <form>
+        <fieldset class=grupo>
+           
+            <div class=campo>
+                <label for="nome"><strong>Digite aqui sua mensagem: </strong></label>
+                <input type="text" name="name" id="nome">
+            </div>
+
+            <div class=campo>
+                <legend>Escolha sua opção:</legend>
+                    <select>
+                        <option>Codificar</option>
+                        <option>Decodificar</option>
+                    </select>
+            </div>
+
+            <div class=campo>
+                <legend>Escolha sua opção:</legend>
+                <label for="radio-cifra"><input type="radio" name="cifra" value="cifra" id="radio-cifra">Cifra de César</label>
+                <label for="radio-base"><input type="radio" name="cifra" value="base" id="radio-base">Base64</label>
+            </div>
+            
+        </fieldset>
+
+        <input type="submit" value="Codificar" class="codificar">
+        <input type="submit" value="Decodificar" class="decodificar">
+
+    </form>
+
+</body>
+</html>
