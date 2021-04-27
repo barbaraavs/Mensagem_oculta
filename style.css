@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+}
+
+header {
+    background-color: #9DA9A0;
+    display: flex;
+}
+
+.caixa {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    padding: 50px;
+}
+
+header h2 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+    padding: 50px;
+}
+
+.descricao, .cifra {
+    padding: 0;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 18px;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.cifra img {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form, .input-padrao{
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+}
+
+legend, select, option, label {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 18px;    
+}
+
+fieldset {
+    display: contents;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+}
+#radio-cifra, #radio-base {
+    margin: 20px;
+    padding: 20px;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    border: #9DA9A0 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+}
+
+button:hover {
+    border: #9DA9A0 2px solid;
+    color: #000000;
+    background-color: #FFFFFF;
+    transform: scale(1.15);
+    font-size: 19;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: #9DA9A0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px 0;
+}
+
+.rodape {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    padding: 30px;
+}
+
+.copyright {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    padding: 50px;
+}

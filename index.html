@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Passinho do Romano</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="caixa">
-            <h1>Codificador / Decodificador</h1>
+            <h1><img src="coding.png"></h1>
+            <h2>Codificador / Decodificador: Cifra de César e Base64</h2>
         </div>
     </header>
-    <p>O seguinte formulário tem como objetivo codificar ou decodificar uma frase, com base na cifra de césar ou da base64.</p>
-    <p>A cifra de César consiste em é uma simples técnica de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes.</p>
-    <img src="cifra.png">
-    <p>A Base64 é um método para codificação de dados para transferência na Internet. É constituído por 64 caracteres ([A-Z],[a-z],[0-9], "/" e "+") que deram origem ao seu nome. O carácter "=" é utilizado como um sufixo especial e a especificação original definiu que o símbolo "*" pode ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream.</p>
+    <div class="descricao">
+        <p>O seguinte formulário tem como objetivo codificar ou decodificar uma frase, com base na Cifra de César ou da Base64.</p>
+    </div>
+    <div class="cifra">
+        <p>A Cifra de César consiste em é uma simples técnica de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes.</p>
+        <img src="cifra.png">
+    </div>
+    <div class="descricao">
+        <p>A Base64 é um método para codificação de dados para transferência na Internet. É constituído por 64 caracteres ([A-Z],[a-z],[0-9], "/" e "+") que deram origem ao seu nome. O carácter "=" é utilizado como um sufixo especial e a especificação original definiu que o símbolo "*" pode ser utilizado para delimitar dados convertidos, mas não criptografados, dentro de um stream.</p>
+    </div>
     <form>
-        <fieldset class=grupo>
-           
-            <div class=campo>
-                <label for="nome"><strong>Digite aqui sua mensagem: </strong></label>
-                <input type="text" name="name" id="nome">
-            </div>
+        <label for="nome"><strong>Digite aqui sua mensagem: </strong></label>
+        <textarea cols="70" rows="5" id="mensagem" class="input-padrao" required></textarea>
 
-            <div class=campo>
-                <legend>Escolha sua opção:</legend>
-                    <select>
-                        <option>Codificar</option>
-                        <option>Decodificar</option>
-                    </select>
-            </div>
-
-            <div class=campo>
-                <legend>Escolha sua opção:</legend>
-                <label for="radio-cifra"><input type="radio" name="cifra" value="cifra" id="radio-cifra">Cifra de César</label>
-                <label for="radio-base"><input type="radio" name="cifra" value="base" id="radio-base">Base64</label>
-            </div>
+        <legend>Escolha sua opção:</legend>
+            <select>
+                <option>Codificar</option>
+                <option>Decodificar</option>
+            </select>
             
+        <fieldset>    
+            <legend>Escolha sua opção:</legend>
+            <label for="radio-cifra"><input type="radio" name="cifra" value="cifra" id="radio-cifra">Cifra de César</label>
+            <label for="radio-base"><input type="radio" name="cifra" value="base" id="radio-base">Base64</label>
         </fieldset>
 
-        <input type="submit" value="Codificar" class="codificar">
-        <input type="submit" value="Decodificar" class="decodificar">
-
+        <button>Codificar</button>
+        <button>Decodificar</button>     
     </form>
-
+    <footer>
+        <div class="rodape">
+            <img src="coding.png">
+            <p class="copyright">&copy; Codificador - Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
