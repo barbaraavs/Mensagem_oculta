@@ -57,14 +57,14 @@ header h2 {
     justify-content: space-around;
 }
 
-form, .input-padrao{
+form, .input-padrao {
     position: relative;
     width: 1000px;
     margin: 0 auto;
     display: grid;
 }
 
-legend, select, option, label {
+legend, select, option, label, textarea, .mensagemFinal {
     font-family: 'Montserrat', sans-serif;
     color: #000000;
     font-weight: bold;
@@ -78,7 +78,18 @@ fieldset {
     align-items: center;
     height: 100px;
 }
-#radio-cifra, #radio-base {
+
+.numero {
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    font-size: 14px; 
+}
+
+.radioCod, .radioDec {
     margin: 20px;
     padding: 20px;
 }
@@ -92,7 +103,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
+    width: 200px;
     height: 50px;
     margin: 10px;
 }
@@ -103,6 +114,11 @@ button:hover {
     background-color: #FFFFFF;
     transform: scale(1.15);
     font-size: 19;
+}
+
+.mensagemFinal {
+    margin: 10px;   
+    border: none;
 }
 
 footer {
@@ -136,4 +152,38 @@ footer img {
     color: #000000;
     font-weight: 600;
     padding: 50px;
+}
+
+.invisivel {
+    display: none;
+}
+
+/*@media screen and (max-width: 700px) {
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: inline;
+    }
+
+    .caixa {
+        background-color: #9DA9A0;
+        position: absolute;
+    }
+    
+    header img {
+        display: none;
+    }
+
+    header h2 {
+        font-size: 30px;
+        align-items: center;
+    }
+
+    .descricao, .cifra {
+        box-sizing: border-box;
+        padding: 30px;
+        margin: 30px;
+    }
 }

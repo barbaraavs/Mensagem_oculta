@@ -2,10 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Passinho do Romano</title>
+    <title>CIfra e Base64</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width: 700px)" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="coding.png">
 </head>
 <body>
     <header>
@@ -26,28 +28,39 @@
     </div>
     <form>
         <label for="nome"><strong>Digite aqui sua mensagem: </strong></label>
-        <textarea cols="70" rows="5" id="mensagem" class="input-padrao" required></textarea>
-
+        <textarea cols="10" rows="1" id="mensagemInicial" class="input-padrao"></textarea>
+        
         <legend>Escolha sua opção:</legend>
-            <select>
-                <option>Codificar</option>
-                <option>Decodificar</option>
+            <select class="escolha">
+                <option class="opcao">Escolha</option>
+                <option class="cifra" value="cifraDeCesar">Cifra de César</option>
+                <option class="base64" value="base64">Base64</option>
             </select>
-            
+            <div id="cifraIncDiv" class="invisivel">
+                <label>Incremento<input id="cifraInc"  type="number" class="numero" name="number"></label>
+            </div>
+
         <fieldset>    
             <legend>Escolha sua opção:</legend>
-            <label for="radio-cifra"><input type="radio" name="cifra" value="cifra" id="radio-cifra">Cifra de César</label>
-            <label for="radio-base"><input type="radio" name="cifra" value="base" id="radio-base">Base64</label>
+            <label for="radio-cifra"><input type="radio" name="option" value="codificar" class="radioCod">Codificar</label>
+            <label for="radio-base"><input type="radio" name="option" value="decodificar" class="radioDec">Decodificar</label>
         </fieldset>
 
-        <button>Codificar</button>
-        <button>Decodificar</button>     
+        <button type="submit" class="codif invisivel">Codificar Mensagem</button>
+        <button type="submit" class="decodif invisivel">Decodificar Mensagem</button>     
     </form>
+
+    <section class="descricao">
+        <p><strong>Sua mensagem é:</strong></p>
+        <input id="mensagemFinal" class="mensagemFinal invisivel">
+    </section>
+
     <footer>
         <div class="rodape">
             <img src="coding.png">
             <p class="copyright">&copy; Codificador - Todos os direitos reservados.</p>
         </div>
     </footer>
+    <script src="javascript.js"></script>
 </body>
 </html>
