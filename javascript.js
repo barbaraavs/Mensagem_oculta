@@ -23,6 +23,7 @@ escolhaDecodif.addEventListener('click', () => {
 
 })
 
+// Codificar - Base64 e Cifra de César
 
 codificar.addEventListener('click', (event) => {
   event.preventDefault()
@@ -69,12 +70,13 @@ codificar.addEventListener('click', (event) => {
 
 })
 
+// Decodificar - Base64 e Cifra de César
+
 decodificar.addEventListener('click', (event) => {
   event.preventDefault()
 
   if (escolherSelecao.value == 'base64') {
     var mensagemInicial = document.querySelector('#mensagemInicial').value;
-    console.log(mensagemInicial)
     var mensagemDecodif = atob(mensagemInicial);
     mensagemFinal.classList.remove('invisivel');
     mensagemFinal.value = mensagemDecodif;
